@@ -124,7 +124,7 @@ void UCombatComponent::ServerFire_Implementation(const FVector_NetQuantize& Trac
 
 void UCombatComponent::MulticastFire_Implementation(const FVector_NetQuantize& TraceHitTarget)
 {
-	if (Character && Character->IsLocallyControlled() && !Character->HasAuthority()) return;
+	if (Character && Character->IsLocallyControlled()) return;
 	LocalFire(TraceHitTarget);
 }
 
