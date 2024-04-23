@@ -4,7 +4,6 @@
 
 #include "CoreMinimal.h"
 #include "Weapon.h"
-#include "Kismet/GameplayStatics.h"
 #include "HitScanWeapon.generated.h"
 
 /**

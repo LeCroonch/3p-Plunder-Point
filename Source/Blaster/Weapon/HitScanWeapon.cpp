@@ -4,6 +4,7 @@
 #include "HitScanWeapon.h"
 #include "Engine/SkeletalMeshSocket.h"
 #include "Blaster/Character/BlasterCharacter.h"
+#include "Kismet/GameplayStatics.h"
 
 void AHitScanWeapon::Fire(const FVector& HitTarget)
 {
