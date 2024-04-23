@@ -4,7 +4,9 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/HUD.h"
+#include "Announcement.h"
 #include "BlasterHUD.generated.h"
+
 
 USTRUCT(BlueprintType)
 struct FHUDPackage
