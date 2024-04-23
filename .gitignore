@@ -75,3 +75,9 @@ DerivedDataCache/*
 
 #Starter Content
 Content/StarterContent/*
+
+#addons
+Content/FreeFurniturePack/*
+Content/Kobo_ForestVillage/*
+Content/LearningKit_Robots/*
+Content/AnimStarterPack/*
