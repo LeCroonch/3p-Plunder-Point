@@ -169,14 +169,16 @@ void UMenu::MenuTearDown()
 {
 	RemoveFromParent();
 	UWorld* World = GetWorld();
-	if (World)
+	FString WorldName = World->GetName();
+	if (World && WorldName != "GameStartupMap")
 	{
+		UE_LOG(LogTemp, Warning, TEXT("Passes the test and we moved to next level"));
 		APlayerController* PlayerController = World->GetFirstPlayerController();
 		if (PlayerController)
 		{
 			FInputModeGameOnly InputModeData;
 			PlayerController->SetInputMode(InputModeData);
-			PlayerController->SetShowMouseCursor(false);
+			PlayerController->SetShowMouseCursor(true);
 		}
 	}
 }
