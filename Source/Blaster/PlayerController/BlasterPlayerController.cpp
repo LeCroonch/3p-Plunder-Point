@@ -13,7 +13,7 @@
 #include "Blaster/BlasterComponents/CombatComponent.h"
 #include "Blaster/GameState/BlasterGameState.h"
 #include "Components/Image.h"
-//#include "GameFramework/PlayerState.h"
+#include "GameFramework/PlayerState.h"
 #include "Blaster/PlayerState/BlasterPlayerState.h"
 #include "Blaster/HUD/ReturnToMainMenu.h"
 
