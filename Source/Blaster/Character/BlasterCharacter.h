@@ -33,6 +33,9 @@ public:
 	void MulticastElim(bool bPlayerLeftGame);
 	virtual void Destroyed() override;
 
+	UPROPERTY()
+	TMap<FName, class UBoxComponent*> HitCollisionBoxes;
+
 	UPROPERTY(Replicated)
 	bool bDisableGameplay = false;
 
