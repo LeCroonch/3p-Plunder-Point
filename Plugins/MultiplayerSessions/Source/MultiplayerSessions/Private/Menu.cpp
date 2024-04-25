@@ -169,8 +169,7 @@ void UMenu::MenuTearDown()
 {
 	RemoveFromParent();
 	UWorld* World = GetWorld();
-	FString WorldName = World->GetName();
-	if (World && WorldName != "GameStartupMap")
+	if (World)
 	{
 		UE_LOG(LogTemp, Warning, TEXT("Passes the test and we moved to next level"));
 		APlayerController* PlayerController = World->GetFirstPlayerController();
